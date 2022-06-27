@@ -78,9 +78,8 @@ $('#blogs_carousel').owlCarousel({
 $('#app_screenshot').owlCarousel({
   loop:true,
   nav:true,
-  dots: true,
-  margin: 0,
-  nav: false,
+  dots: false,
+  margin: 10,
   navText: ['<span class="iconify" data-icon="fontisto:angle-left"></span>','<span class="iconify" data-icon="fontisto:angle-right"></span>'],
   responsive: {
     0:{
@@ -96,27 +95,27 @@ $('#app_screenshot').owlCarousel({
 })
 
 // $('.owl-item.active:nth-child(3)').prev();
-$('#app_screenshot').mouseover(function(){
-  var middleActive;
-  var previousActive;
-  var previouChild;
-  var nextActive;
-  var activeItemLength = [$('#app_screenshot .owl-item.active')];
-  activeItemLength.forEach(element => {
-    previousActive = element[1];
-    previousActive.style.height = "380px";
-    previouChild = previousActive.children[0];
-    console.log(previouChild);
-    previouChild.style.height = "380px";
-    previouChild = previousActive.children[0].children[0].style.height = "380px";
-    console.log(previouChild);
-    console.log(previousActive);
-    middleActive = element[2];
-    nextActive = element[3]
-  });
+// $('#app_screenshot').mouseover(function(){
+//   var middleActive;
+//   var previousActive;
+//   var previouChild;
+//   var nextActive;
+//   var activeItemLength = [$('#app_screenshot .owl-item.active')];
+//   activeItemLength.forEach(element => {
+//     previousActive = element[1];
+//     previousActive.style.height = "380px";
+//     previouChild = previousActive.children[0];
+//     console.log(previouChild);
+//     previouChild.style.height = "380px";
+//     previouChild = previousActive.children[0].children[0].style.height = "380px";
+//     console.log(previouChild);
+//     console.log(previousActive);
+//     middleActive = element[2];
+//     nextActive = element[3]
+//   });
 
 
-})
+// })
 
 //Faq accodion
 

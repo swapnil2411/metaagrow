@@ -1018,10 +1018,36 @@ aside.showMobileNav{
 
 /* App Screenshot Css */
 
-.heightOne{
-	height: 80%;
+.app_screenshot_area{
+	padding: 70px 0;
+	background-color: transparent;
+    background-image: radial-gradient(at center center, #31214E 0%, #2C3037 100%);;
 }
 
+#app_screenshot .owl-nav .owl-prev,
+#app_screenshot .owl-nav .owl-next{
+	background: #fff;
+    padding: 15px 17px !important;
+    border-radius: 100%;
+}
+
+
+#app_screenshot .owl-nav .owl-prev:hover,
+#app_screenshot .owl-nav .owl-next:hover{
+	background: #1B0234;
+}
+
+#app_screenshot .owl-nav .owl-prev svg,
+#app_screenshot .owl-nav .owl-next svg{
+	font-size: 12px;
+}
+
+
+/* #app_screenshot .item img{
+	width: 100%;
+	max-width: unset;
+	height: 100%;
+} */
 
   /* Blogs Area */
   .blogs_area{
@@ -1383,7 +1409,7 @@ aside.showMobileNav{
 }
 
 .inner_page_header h3{
-	position: relative;
+	/* position: relative; */
 	z-index: 10;
 }
 
@@ -1423,7 +1449,7 @@ aside.showMobileNav{
 }
 
 .vision_mission_area{
-	padding: 12	0px 0 30px;
+	padding: 120px 0 30px;
 }
 
 .vision_mission_area .ethics_column{
