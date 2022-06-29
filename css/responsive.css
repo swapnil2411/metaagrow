@@ -140,6 +140,16 @@
         margin-bottom: 70px;
     }
 
+    .inner_whymeta_content .para h2{
+        font-size: 36px;
+        margin-bottom: 45px;
+    }
+
+    .inner_benefits_content .para h2{
+        font-size: 32px;
+	    line-height: 46px;
+    }
+
 }
 
 @media (max-width: 767px){
@@ -267,6 +277,59 @@
     .ourstory_area .top_middle_img_animation{
         display: none;
     }
+
+    .inner_whymeta_content{
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+
+    .inner_whymeta_content .para,
+    .inner_whymeta_content .img_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inner_whymeta_content .para{
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .inner_whymeta_content .para h2{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .inner_whymeta_content .img_area{
+        text-align: center;
+    }
+
+    .inner_whymeta_content .img_area img.bgImg{
+        left: 10%;
+    }
+
+    .inner_whymeta_content .img_area img{
+        max-width: 80%;
+    }
+
+    .inner_benefits_content{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .inner_benefits_content .para,
+    .inner_benefits_content .img_area{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .inner_benefits_content .para{
+        margin-top: 30px;
+    }
+
+    .inner_benefits_content .para h2{
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 600px){
@@ -311,6 +374,28 @@
 
     .vision_mission_area .ethics_column:not(:last-child){
         margin-bottom: 70px;
+    }
+
+    .inner_whymeta_content .para h2{
+        font-size: 28px;
+        margin-bottom: 36px;
+        text-align: center;
+    }
+
+    .inner_whymeta_content .para p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .inner_benefits_content .para h2{
+        font-size: 26px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .inner_benefits_content .para p{
+        font-size: 15px;
+        text-align: center;
     }
 }
 

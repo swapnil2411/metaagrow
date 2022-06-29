@@ -97,7 +97,9 @@ table {
 .social_links,
 .inner_ourstory_content,
 .vision_mission_area,
-.vision_mission_area .ethics_column .icon{
+.vision_mission_area .ethics_column .icon,
+.inner_whymeta_content,
+.inner_benefits_content{
 	display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -1409,8 +1411,8 @@ aside.showMobileNav{
 }
 
 .inner_page_header h3{
-	/* position: relative; */
-	z-index: 10;
+	position: relative;
+	z-index: 4;
 }
 
 /* Our Story Css */
@@ -1508,4 +1510,108 @@ aside.showMobileNav{
 .vision_mission_area .ethics_column .core_value_content p{
 	font-size: 16px;
 	line-height: 26px;
+}
+
+.inner_whymeta_content{
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.inner_whymeta_content .para,
+.inner_whymeta_content .img_area{
+	flex: 0 0 50%;
+	max-width: 50%;
+	position: relative;
+	z-index: 3;
+}
+
+.inner_whymeta_content .para{
+	padding-left: 60px;
+}
+
+.inner_whymeta_content .para h2{
+	font-size: 40px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.inner_whymeta_content .para p{
+	color: #fff;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+
+
+
+.inner_whymeta_content .img_area img.bgImgTop{
+	position: relative;
+	z-index: 1;
+}
+
+.inner_whymeta_content .img_area img.bgImg{
+	position: absolute;
+	left: 0;
+	top: 6px;
+	z-index: 0;
+	-webkit-animation-name: spin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+/* Benefits */
+.inner_benefits_content{
+	-webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.inner_benefits_content .para,
+.inner_benefits_content .img_area{
+	flex: 0 0 50%;
+	max-width: 50%;
+	position: relative;
+	z-index: 3;
+}
+
+.inner_benefits_content .para{
+	padding-right: 40px;
+}
+
+.inner_benefits_content .para h2{
+	font-size: 36px;
+	line-height: 50px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+
+.inner_benefits_content .para p{
+	color: #fff;
+	line-height: 26px;
+	margin-bottom: 10px;
 }
